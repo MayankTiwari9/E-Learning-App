@@ -1,0 +1,137 @@
+.logo-div {
+  background-color: rgb(237, 247, 239);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.logo-div h1 {
+  width: 200px;
+}
+
+.logo-div > a {
+  text-decoration: none;
+  color: #000000;
+  padding: 1%;
+  transition: 0.3s;
+}
+
+.logo-div > a:hover {
+  box-shadow: 0 2px 7px rgba(34, 34, 34, 0.35);
+  transition: 250ms ease all;
+  transform-origin: 50% 100%;
+}
+
+.signup-div {
+  width: 150px;
+  height: 3vmax;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  color: #ffffff;
+  background: linear-gradient(to right, #54047e, #c2096c);
+  justify-content: center;
+}
+
+.signup-div > a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.signup-div:hover {
+  background: #54047e;
+}
+
+.menu-btn {
+  display: none; 
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.menu-btn.open .menu-icon:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-btn.open .menu-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open .menu-icon:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  padding: 1%;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  box-shadow: 0 2px 7px rgba(34, 34, 34, 0.35);
+  transition: 250ms ease all;
+  transform-origin: 50% 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-div {
+    background-color: rgb(237, 247, 239);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .menu-btn {
+    display: block; 
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: none;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin-bottom: 10px;
+  }
+  .signup-div {
+    width: 150px;
+    height: 5vmax;
+  }
+}
