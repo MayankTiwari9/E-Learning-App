@@ -1,19 +1,10 @@
-import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react'
 
-const Home = ({isLoggedIn}) => {
-    const navigate = useNavigate();
-
-    useEffect(() => {
-
-        if(!isLoggedIn){
-            navigate('/auth');
-        }
-    }, [isLoggedIn])
+const Home = () => {
 
   return (
     <div>
-      
+      Home
     </div>
   )
 }

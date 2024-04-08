@@ -82,7 +82,7 @@ const SignUpForm = () => {
           className=" fw-bold m-4 w-25 border border-2 rounded bg-primary text-white text-center"
           style={{ height: "40px" }}
         >
-          Sin Up
+          Sign Up
         </button>
         <a className="text-decoration-none text-dark"  href="/auth">Already Have an account? Login</a>
       </div>

@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  height: 7vmax;
 }
 
 .sticky {
@@ -13,9 +14,10 @@
   top: 0;
 }
 
-.logo-div h1 {
+.logo-div h3 {
   width: 215px;
   margin-left: 15px;
+  font-size: 25px;
 }
 
 .logo-div > a {

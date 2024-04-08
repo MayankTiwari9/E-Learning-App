@@ -1,0 +1,982 @@
+{
+  "java": [
+    {
+      "question": "What is Java?",
+      "options": [
+        "A type of coffee",
+        "A programming language",
+        "A type of operating system",
+        "A type of animal"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which company originally developed Java?",
+      "options": ["Microsoft", "IBM", "Oracle", "Sun Microsystems"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which of the following is not a primitive data type in Java?",
+      "options": ["int", "boolean", "float", "string"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the parent class of all classes in Java?",
+      "options": ["Object", "Main", "Super", "Parent"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does JVM stand for?",
+      "options": [
+        "Java Variable Manager",
+        "Java Virtual Machine",
+        "Java Visual Model",
+        "Java Versioning Module"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the default value of int variable in Java?",
+      "options": ["0", "null", "1", "Undefined"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the main difference between while and do-while loop in Java?",
+      "options": [
+        "do-while loop executes at least once",
+        "while loop executes at least once",
+        "do-while loop has better performance",
+        "while loop has better performance"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'finally' block in Java exception handling?",
+      "options": [
+        "To handle exceptions",
+        "To execute code after try-catch block regardless of an exception",
+        "To clean up system resources",
+        "To restart the application"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the keyword used to define a method that does not return any value in Java?",
+      "options": ["void", "null", "nil", "none"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which keyword is used to prevent method overriding in Java?",
+      "options": ["final", "static", "private", "abstract"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the default access modifier in Java for variables and methods?",
+      "options": ["private", "public", "protected", "package-private"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which Java feature allows multiple methods with the same name but different parameters?",
+      "options": [
+        "Method overloading",
+        "Method overriding",
+        "Polymorphism",
+        "Inheritance"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of the following code snippet? \n\npublic class Test {\n   public static void main(String[] args) {\n      String str = \"Hello\";\n      System.out.println(str.substring(0, 2));\n   }\n}",
+      "options": ["He", "Hel", "H", "Hello"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the result of 10 == 10.0 in Java?",
+      "options": ["true", "false", "compiler error", "runtime error"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which collection class allows null as a key in Java?",
+      "options": ["HashMap", "TreeMap", "LinkedHashMap", "Hashtable"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the difference between equals() and == in Java?",
+      "options": [
+        "They are identical",
+        "equals() compares object content, == compares references",
+        "equals() compares references, == compares object content",
+        "equals() is used for primitive types, == is used for objects"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which statement is used to exit a loop in Java?",
+      "options": ["break", "exit", "return", "continue"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the correct syntax to create an array in Java?",
+      "options": [
+        "int[] myArray;",
+        "int myArray[];",
+        "int myArray{};",
+        "None of the above"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the 'extends' keyword signify when used in a class declaration in Java?",
+      "options": [
+        "It indicates that the class is an abstract class",
+        "It indicates that the class is a concrete class",
+        "It indicates that the class is a subclass",
+        "It indicates that the class is a superclass"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of the following code snippet? \n\npublic class Test {\n   public static void main(String[] args) {\n      int x = 5;\n      System.out.println(x++);\n   }\n}",
+      "options": ["5", "6", "Compiler error", "Runtime error"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which keyword is used to prevent a class from being instantiated in Java?",
+      "options": ["static", "final", "abstract", "private"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of the following code snippet? \n\npublic class Test {\n   public static void main(String[] args) {\n      int x = 5;\n      System.out.println(++x);\n   }\n}",
+      "options": ["5", "6", "Compiler error", "Runtime error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'static' keyword in Java?",
+      "options": [
+        "It makes a variable non-modifiable.",
+        "It means the variable belongs to the class, not instances.",
+        "It makes a variable modifiable by other classes.",
+        "It makes a variable global."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'super' keyword in Java?",
+      "options": [
+        "To refer to the current instance of the class",
+        "To invoke the superclass method or constructor",
+        "To initialize the class variables",
+        "To declare a class constant"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What does the 'synchronized' keyword signify in Java?",
+      "options": [
+        "It indicates that the method cannot be overridden.",
+        "It indicates that the method can be accessed by multiple threads simultaneously.",
+        "It ensures that only one thread at a time can execute the method.",
+        "It indicates that the method cannot be accessed by other classes."
+      ],
+      "correctAnswer": 2
+    }
+  ],
+  "javascript": [
+    {
+      "question": "What is the purpose of the 'typeof' operator in JavaScript?",
+      "options": [
+        "To check the type of a variable",
+        "To create a new variable",
+        "To perform arithmetic operations",
+        "To loop through an array"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the term 'closure' refer to in JavaScript?",
+      "options": [
+        "A way to declare variables",
+        "A function that has access to its outer scope even after the outer scope has closed",
+        "A type of loop",
+        "A conditional statement"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": ["variable", "let", "var", "int"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of 2 + '2' in JavaScript?",
+      "options": ["4", "'22'", "22", "NaN"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'this' keyword in JavaScript?",
+      "options": [
+        "To refer to the current function",
+        "To refer to the parent function",
+        "To refer to the current object",
+        "To refer to a global variable"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the result of typeof typeof 10 in JavaScript?",
+      "options": ["'number'", "'string'", "'object'", "'undefined'"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What does the term 'hoisting' refer to in JavaScript?",
+      "options": [
+        "Moving a variable declaration to the top of its scope",
+        "Creating a new variable",
+        "Removing a variable declaration",
+        "Declaring a variable without assigning a value"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which method is used to add a new element to the end of an array in JavaScript?",
+      "options": ["push()", "add()", "append()", "insert()"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'JSON.stringify()' method in JavaScript?",
+      "options": [
+        "To parse JSON data",
+        "To convert a JavaScript object to a JSON string",
+        "To convert a JSON string to a JavaScript object",
+        "To check if a value is JSON"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the output of 5 == '5' in JavaScript?",
+      "options": ["true", "false", "TypeError", "NaN"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the difference between '==' and '===' operators in JavaScript?",
+      "options": [
+        "They are identical",
+        "'===' performs strict equality comparison, '==' performs type coercion",
+        "'==' performs strict equality comparison, '===' performs type coercion",
+        "'===' performs loose equality comparison, '==' performs strict equality comparison"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which method is used to remove the last element from an array in JavaScript?",
+      "options": ["pop()", "remove()", "delete()", "slice()"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'Array.isArray()' method in JavaScript?",
+      "options": [
+        "To check if a value is an array",
+        "To convert an array to a string",
+        "To sort an array",
+        "To add elements to an array"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does NaN stand for in JavaScript?",
+      "options": [
+        "Newly Assigned Number",
+        "Not a Number",
+        "Number and Null",
+        "Negative And Null"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the output of typeof NaN in JavaScript?",
+      "options": ["'number'", "'NaN'", "'undefined'", "'string'"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'Array.join()' method in JavaScript?",
+      "options": [
+        "To add elements to an array",
+        "To remove elements from an array",
+        "To concatenate all elements of an array into a string",
+        "To reverse the elements of an array"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the purpose of the 'Array.splice()' method in JavaScript?",
+      "options": [
+        "To add elements to an array",
+        "To remove elements from an array",
+        "To split an array into multiple arrays",
+        "To merge two arrays"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the output of '5' + 3 in JavaScript?",
+      "options": ["8", "'53'", "'35'", "NaN"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'Array.reverse()' method in JavaScript?",
+      "options": [
+        "To sort an array in descending order",
+        "To reverse the elements of an array",
+        "To remove duplicate elements from an array",
+        "To shuffle the elements of an array"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'Array.slice()' method in JavaScript?",
+      "options": [
+        "To add elements to an array",
+        "To remove elements from an array",
+        "To extract a section of an array and return a new array",
+        "To sort the elements of an array"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which method is used to sort the elements of an array in JavaScript?",
+      "options": ["sort()", "order()", "arrange()", "sequence()"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'Array.concat()' method in JavaScript?",
+      "options": [
+        "To add elements to an array",
+        "To remove elements from an array",
+        "To concatenate two or more arrays and return a new array",
+        "To reverse the elements of an array"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of '2' - 1 in JavaScript?",
+      "options": ["1", "'21'", "1.0", "NaN"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'Array.forEach()' method in JavaScript?",
+      "options": [
+        "To iterate over the elements of an array",
+        "To add elements to an array",
+        "To remove elements from an array",
+        "To sort the elements of an array"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of typeof undefined in JavaScript?",
+      "options": ["'undefined'", "'null'", "'object'", "'string'"],
+      "correctAnswer": 0
+    }
+  ],
+  "python": [
+    {
+      "question": "What is the output of 3 * 'abc' in Python?",
+      "options": ["'abcabcabc'", "9", "'333'", "Syntax Error"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'zip()' function in Python?",
+      "options": [
+        "To compress files",
+        "To create a zip archive",
+        "To combine multiple iterables element-wise",
+        "To unzip files"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which keyword is used for function definition in Python?",
+      "options": ["func", "def", "function", "define"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What does the 'range()' function in Python return?",
+      "options": [
+        "A list of numbers",
+        "A tuple of numbers",
+        "A generator object",
+        "A dictionary"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which of the following is an immutable data type in Python?",
+      "options": ["List", "Tuple", "Dictionary", "Set"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What does the 'map()' function do in Python?",
+      "options": [
+        "Applies a function to each element of an iterable",
+        "Creates a map object",
+        "Returns a list of keys in a dictionary",
+        "Finds the maximum value in an iterable"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'hello'[::-1] in Python?",
+      "options": ["'hello'", "'olleh'", "'olleh'", "'eh'", "'hell'"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What does the 'lambda' keyword signify in Python?",
+      "options": [
+        "Declaration of an anonymous function",
+        "Declaration of a class",
+        "Declaration of a variable",
+        "Declaration of a generator"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'enumerate()' function in Python?",
+      "options": [
+        "To iterate over a sequence while keeping track of the index",
+        "To create a list of tuples",
+        "To convert a list into a dictionary",
+        "To find the maximum value in a sequence"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the 'os.path.join()' function do in Python?",
+      "options": [
+        "Joins two or more paths intelligently",
+        "Returns the current working directory",
+        "Creates a new directory",
+        "Deletes a file"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following statements is true about Python's 'pass' statement?",
+      "options": [
+        "It does nothing and acts as a placeholder",
+        "It halts the program execution",
+        "It is used to break out of a loop",
+        "It is used to catch exceptions"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 2 ** 3 in Python?",
+      "options": ["6", "8", "9", "16"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'with' statement in Python?",
+      "options": [
+        "To define a context manager",
+        "To loop over a sequence",
+        "To declare a variable",
+        "To concatenate strings"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is a built-in data type in Python?",
+      "options": ["Array", "Tuple", "LinkedList", "Queue"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'filter()' function in Python?",
+      "options": [
+        "To filter out elements of an iterable based on a function",
+        "To filter out negative numbers",
+        "To filter out duplicates from a list",
+        "To filter out None values from a list"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'hello'.upper() in Python?",
+      "options": ["'HELLO'", "'hello'", "'Hello'", "'hElLo'"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'random.choice()' function in Python?",
+      "options": [
+        "To select a random element from a list",
+        "To generate a random number",
+        "To shuffle a list randomly",
+        "To check if a number is prime"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of the expression '5 / 2' in Python?",
+      "options": ["2.5", "2", "2.0", "2.2"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is not a valid data structure in Python?",
+      "options": ["List", "Tuple", "Array", "Dictionary"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the purpose of the 'reduce()' function in Python?",
+      "options": [
+        "To perform a rolling computation on a list",
+        "To filter elements of an iterable",
+        "To map a function to all elements of an iterable",
+        "To zip two iterables together"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the 'repr()' function do in Python?",
+      "options": [
+        "Returns a string representation of an object",
+        "Returns the memory address of an object",
+        "Returns the length of an object",
+        "Returns the hash value of an object"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'python'.find('on') in Python?",
+      "options": ["'py'", "'th'", "1", "2"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the purpose of the 'is' operator in Python?",
+      "options": [
+        "To check if two variables refer to the same object",
+        "To check if two variables have the same value",
+        "To check if a variable is empty",
+        "To check if a variable is iterable"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'hello' + 'world' in Python?",
+      "options": ["'helloworld'", "'hello world'", "'hello'", "'world'"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the 'strip()' method do in Python?",
+      "options": [
+        "Removes leading and trailing whitespace",
+        "Removes all occurrences of a specified character",
+        "Splits a string into a list",
+        "Joins strings together"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "c": [
+    {
+      "question": "What is the output of printf(\"%d\", sizeof('a')) in C?",
+      "options": ["1", "2", "4", "8"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of '#include' directive in C?",
+      "options": [
+        "To include a header file",
+        "To declare a variable",
+        "To define a function",
+        "To print output"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which symbol is used for single-line comments in C?",
+      "options": ["//", "#", "/* */", ";"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of 'malloc()' function in C?",
+      "options": [
+        "To allocate memory dynamically",
+        "To free allocated memory",
+        "To print formatted output",
+        "To perform mathematical operations"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is not a valid data type in C?",
+      "options": ["int", "float", "double", "string"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the output of 'printf(\"%d\", sizeof(5))' in C?",
+      "options": ["1", "2", "4", "8"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which operator is used for pointer dereferencing in C?",
+      "options": ["*", "&", "->", "=>"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the 'scanf()' function do in C?",
+      "options": [
+        "Reads input from the standard input stream",
+        "Prints formatted output",
+        "Allocates memory",
+        "Frees memory"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'return' statement in C?",
+      "options": [
+        "To terminate the program",
+        "To skip the remaining code in a loop",
+        "To return a value from a function",
+        "To print output"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of 'printf(\"%c\", 65)' in C?",
+      "options": ["65", "'A'", "65.0", "Compiler Error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'void' keyword in C?",
+      "options": [
+        "To declare a function that doesn't return a value",
+        "To declare a variable",
+        "To define a function",
+        "To include a header file"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'printf(\"%f\", 3 / 2)' in C?",
+      "options": ["1.5", "1", "1.0", "Compiler Error"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the purpose of the 'sizeof' operator in C?",
+      "options": [
+        "To find the size of a data type",
+        "To perform addition",
+        "To perform multiplication",
+        "To find the remainder"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is an example of a loop in C?",
+      "options": ["if", "for", "switch", "do"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'static' keyword in C?",
+      "options": [
+        "To declare a variable with a fixed value",
+        "To allocate memory dynamically",
+        "To declare a variable that retains its value between function calls",
+        "To declare a variable with local scope"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of 'printf(\"%d\", 10 << 1)' in C?",
+      "options": ["10", "20", "5", "Compiler Error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What does the 'break' statement do in C?",
+      "options": [
+        "Terminates the current loop or switch statement",
+        "Skips the remaining code in a loop",
+        "Returns a value from a function",
+        "Prints output"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'continue' statement in C?",
+      "options": [
+        "Skips the remaining code in a loop and proceeds to the next iteration",
+        "Terminates the loop",
+        "Returns a value from a function",
+        "Prints output"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'printf(\"%d\", 5 & 3)' in C?",
+      "options": ["1", "2", "3", "Compiler Error"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'typedef' keyword in C?",
+      "options": [
+        "To define a new data type",
+        "To declare a function",
+        "To declare a variable",
+        "To include a header file"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'printf(\"%d\", -5 >> 1)' in C?",
+      "options": ["-3", "-2", "-1", "Compiler Error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'extern' keyword in C?",
+      "options": [
+        "To declare a variable that is defined elsewhere",
+        "To include a header file",
+        "To define a function",
+        "To declare a variable with local scope"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is not a valid storage class in C?",
+      "options": ["auto", "register", "static", "constant"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the output of 'printf(\"%d\", 5 | 3)' in C?",
+      "options": ["5", "3", "7", "Compiler Error"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the purpose of the 'sizeof' operator in C?",
+      "options": [
+        "To find the size of a data type",
+        "To perform addition",
+        "To perform multiplication",
+        "To find the remainder"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'printf(\"%d\", 5 && 3)' in C?",
+      "options": ["1", "0", "3", "Compiler Error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'do-while' loop in C?",
+      "options": [
+        "To execute a block of code repeatedly until a condition is false",
+        "To execute a block of code repeatedly until a condition is true",
+        "To execute a block of code exactly once",
+        "To skip the remaining code in a loop"
+      ],
+      "correctAnswer": 0
+    }
+  ],
+  "cpp": [
+    {
+      "question": "What is the output of cout << sizeof('a') in C++?",
+      "options": ["1", "2", "4", "8"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of '#include' directive in C++?",
+      "options": [
+        "To include a header file",
+        "To declare a variable",
+        "To define a function",
+        "To print output"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which symbol is used for single-line comments in C++?",
+      "options": ["//", "#", "/* */", ";"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of 'new' operator in C++?",
+      "options": [
+        "To allocate memory dynamically",
+        "To free allocated memory",
+        "To print output",
+        "To perform mathematical operations"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is not a valid data type in C++?",
+      "options": ["int", "float", "double", "string"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the output of 'cout << sizeof(5)' in C++?",
+      "options": ["1", "2", "4", "8"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which operator is used for pointer dereferencing in C++?",
+      "options": ["*", "&", "->", "=>"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the 'cin' object do in C++?",
+      "options": [
+        "Reads input from the standard input stream",
+        "Prints formatted output",
+        "Allocates memory",
+        "Frees memory"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'return' statement in C++?",
+      "options": [
+        "To terminate the program",
+        "To skip the remaining code in a loop",
+        "To return a value from a function",
+        "To print output"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of 'cout << 65' in C++?",
+      "options": ["65", "'A'", "65.0", "Compiler Error"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'void' keyword in C++?",
+      "options": [
+        "To declare a function that doesn't return a value",
+        "To declare a variable",
+        "To define a function",
+        "To include a header file"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'cout << 3 / 2' in C++?",
+      "options": ["1.5", "1", "1.0", "Compiler Error"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the purpose of the 'sizeof' operator in C++?",
+      "options": [
+        "To find the size of a data type",
+        "To perform addition",
+        "To perform multiplication",
+        "To find the remainder"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is an example of a loop in C++?",
+      "options": ["if", "for", "switch", "do"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'static' keyword in C++?",
+      "options": [
+        "To declare a variable with a fixed value",
+        "To allocate memory dynamically",
+        "To declare a variable that retains its value between function calls",
+        "To declare a variable with local scope"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the output of 'cout << 10 << 1' in C++?",
+      "options": ["10", "20", "5", "Compiler Error"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What does the 'break' statement do in C++?",
+      "options": [
+        "Terminates the current loop or switch statement",
+        "Skips the remaining code in a loop",
+        "Returns a value from a function",
+        "Prints output"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'continue' statement in C++?",
+      "options": [
+        "Skips the remaining code in a loop and proceeds to the next iteration",
+        "Terminates the loop",
+        "Returns a value from a function",
+        "Prints output"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'cout << 5 & 3' in C++?",
+      "options": ["1", "2", "3", "Compiler Error"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the purpose of the 'typedef' keyword in C++?",
+      "options": [
+        "To define a new data type",
+        "To declare a function",
+        "To declare a variable",
+        "To include a header file"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'cout << -5 >> 1' in C++?",
+      "options": ["-3", "-2", "-1", "Compiler Error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'extern' keyword in C++?",
+      "options": [
+        "To declare a variable that is defined elsewhere",
+        "To include a header file",
+        "To define a function",
+        "To declare a variable with local scope"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which of the following is not a valid storage class in C++?",
+      "options": ["auto", "register", "static", "constant"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the output of 'cout << 5 | 3' in C++?",
+      "options": ["5", "3", "7", "Compiler Error"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the purpose of the 'sizeof' operator in C++?",
+      "options": [
+        "To find the size of a data type",
+        "To perform addition",
+        "To perform multiplication",
+        "To find the remainder"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is the output of 'cout << 5 && 3' in C++?",
+      "options": ["1", "0", "3", "Compiler Error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the purpose of the 'do-while' loop in C++?",
+      "options": [
+        "To execute a block of code repeatedly until a condition is false",
+        "To execute a block of code repeatedly until a condition is true",
+        "To execute a block of code exactly once",
+        "To skip the remaining code in a loop"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}
