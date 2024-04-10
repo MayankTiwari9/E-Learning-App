@@ -37,8 +37,8 @@ const Navbar = () => {
           </div>
           <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <Link to="/">Home</Link>
-            <Link to="/">Online Courses</Link>
-            <Link to="/">Documentations</Link>
+            <Link to="/online-course">Online Courses</Link>
+            <Link to="/documentation">Documentations</Link>
             <Link to="/test">Mock Tests</Link>
             <Link to="/">Contact Us</Link>
             {isLoggedIn ? (<Link className="preNavLink" to="/">

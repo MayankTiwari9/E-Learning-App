@@ -8,6 +8,7 @@ const MockTest = () => {
   const [answers, setAnswers] = useState([]);
   const [result, setResult] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [bestScore, setBestScore] = useState(null);
 
   const params = useParams();
 
@@ -16,6 +17,10 @@ const MockTest = () => {
   useEffect(() => {
     const shuffledQuestions = shuffleArray(data[language]).slice(0, 5);
     setQuestions(shuffledQuestions);
+    const storedBestScore = localStorage.getItem(`${language}_best_score`);
+    if (storedBestScore) {
+      setBestScore(parseInt(storedBestScore));
+    }
   }, [language]);
 
   const shuffleArray = (array) => {
@@ -51,62 +56,90 @@ const MockTest = () => {
       }
     });
     setResult(score);
+
+    const storedBestScore = localStorage.getItem(`${language}_best_score`);
+    if (!storedBestScore || score > parseInt(storedBestScore)) {
+      localStorage.setItem(`${language}_best_score`, score);
+      setBestScore(score);
+    }
   };
 
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
     <div className="container">
-  {result === null ? (
-    <div className="card">
-      <div className="card-body">
-        <h1 className="card-title">{language.charAt(0).toUpperCase() + language.slice(1)} Test</h1>
-        <p className="card-text">
-          Question {currentQuestionIndex + 1} of {questions.length}
-        </p>
-        <h3>{currentQuestion && currentQuestion.question}</h3>
-        <ul className="list-group">
-          {currentQuestion &&
-            currentQuestion.options.map((option, index) => (
-              <li key={index} className="list-group-item">
-                <label className="form-check-label">
-                  <input
-                    type="radio"
-                    name="answer"
-                    value={index}
-                    onChange={() => handleAnswer(index)}
-                    checked={selectedOption === index}
-                    className="form-check-input"
-                  />
-                  {option}
-                </label>
-              </li>
-            ))}
-        </ul>
-        <div>
-          {currentQuestionIndex > 0 && (
-            <button className="btn btn-secondary mr-2" onClick={handlePreviousQuestion}>Previous Question</button>
-          )}
-          {currentQuestionIndex < questions.length - 1 && (
-            <button className="btn btn-primary mr-2" onClick={handleNextQuestion}>Next Question</button>
-          )}
-          {currentQuestionIndex === questions.length - 1 && (
-            <button className="btn btn-success" onClick={calculateScore}>Finish Test</button>
-          )}
+      {result === null ? (
+        <div className="card">
+          <div className="card-body">
+            <h1 className="card-title">
+              {language.charAt(0).toUpperCase() + language.slice(1)} Test
+            </h1>
+            <p className="card-text">
+              Question {currentQuestionIndex + 1} of {questions.length}
+            </p>
+            <h3>{currentQuestion && currentQuestion.question}</h3>
+            <ul className="list-group">
+              {currentQuestion &&
+                currentQuestion.options.map((option, index) => (
+                  <li key={index} className="list-group-item">
+                    <label className="form-check-label">
+                      <input
+                        type="radio"
+                        name="answer"
+                        value={index}
+                        onChange={() => handleAnswer(index)}
+                        checked={selectedOption === index}
+                        className="form-check-input"
+                      />
+                      {option}
+                    </label>
+                  </li>
+                ))}
+            </ul>
+            <div>
+              {currentQuestionIndex > 0 && (
+                <button
+                  className="btn btn-secondary mr-2"
+                  onClick={handlePreviousQuestion}
+                >
+                  Previous Question
+                </button>
+              )}
+              {currentQuestionIndex < questions.length - 1 && (
+                <button
+                  className="btn btn-primary mr-2"
+                  onClick={handleNextQuestion}
+                >
+                  Next Question
+                </button>
+              )}
+              {currentQuestionIndex === questions.length - 1 && (
+                <button
+                  className="btn btn-success"
+                  onClick={calculateScore}
+                >
+                  Finish Test
+                </button>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="card mt-4">
+          <div className="card-body mx-auto d-flex flex-column justify-content-center">
+            <h1 className="card-title">Test Result</h1>
+            <p className="card-text">
+              Your score: {result} / {questions.length}
+            </p>
+            {bestScore !== null && (
+              <p className="card-text">
+                Best score: {bestScore} / {questions.length}
+              </p>
+            )}
+          </div>
+        </div>
+      )}
     </div>
-  ) : (
-    <div className="card">
-      <div className="card-body">
-        <h1 className="card-title">Test Result</h1>
-        <p className="card-text">
-          Your score: {result} / {questions.length}
-        </p>
-      </div>
-    </div>
-  )}
-</div>
   );
 };
 

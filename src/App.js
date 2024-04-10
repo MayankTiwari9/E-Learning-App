@@ -7,6 +7,8 @@ import SignInForm from "./Components/Authentication/SignInForm";
 import Home from "./Components/Home/Home";
 import Test from "./Components/Tests/Test";
 import MockTest from "./Components/Tests/MockTest";
+import Documentation from "./Components/Documentation/Documentation";
+import OnlineCourse from "./Components/OnlineCourse/OnlineCourse";
 
 function App() {
   localStorage.setItem("JavaScore", 0);
@@ -19,6 +21,8 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/auth" element={<SignInForm />} />
           <Route path="/sign-up" element={<SignUpForm />} />
+          <Route path="/documentation" element={<Documentation/>}/>
+          <Route path="online-course" element={<OnlineCourse/>}/>
           <Route path="/test" element={<Test/>}/>
           <Route path="/test/:language" element={<MockTest/>}/>
         </Routes>
