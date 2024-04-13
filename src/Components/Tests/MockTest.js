@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import data from "../../test.json";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate  } from "react-router-dom";
+import "./MockTest.css";
+import Tick from "./tick.png";
 
 const MockTest = () => {
   const [questions, setQuestions] = useState([]);
@@ -9,6 +11,9 @@ const MockTest = () => {
   const [result, setResult] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
   const [bestScore, setBestScore] = useState(null);
+  const [showPopup, setShowPopup] = useState(false); 
+  const [score, setScore] = useState(0);
+  const navigate = useNavigate(); 
 
   const params = useParams();
 
@@ -55,6 +60,7 @@ const MockTest = () => {
         score++;
       }
     });
+    setScore(score); 
     setResult(score);
 
     const storedBestScore = localStorage.getItem(`${language}_best_score`);
@@ -62,7 +68,13 @@ const MockTest = () => {
       localStorage.setItem(`${language}_best_score`, score);
       setBestScore(score);
     }
+
+    setShowPopup(true); 
   };
+
+  const doneButton = () => {
+    navigate("/test");
+  }
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -114,10 +126,7 @@ const MockTest = () => {
                 </button>
               )}
               {currentQuestionIndex === questions.length - 1 && (
-                <button
-                  className="btn btn-success"
-                  onClick={calculateScore}
-                >
+                <button className="btn btn-success" onClick={calculateScore}>
                   Finish Test
                 </button>
               )}
@@ -125,19 +134,17 @@ const MockTest = () => {
           </div>
         </div>
       ) : (
-        <div className="card mt-4">
-          <div className="card-body mx-auto d-flex flex-column justify-content-center">
-            <h1 className="card-title">Test Result</h1>
-            <p className="card-text">
-              Your score: {result} / {questions.length}
-            </p>
+        showPopup && (
+          <div className="pop open-popup">
+            <img src={Tick} alt="tick" />
+            <h2>Congratulations! </h2>
+            <p>Your score: {score} / {questions.length}</p>
             {bestScore !== null && (
-              <p className="card-text">
-                Best score: {bestScore} / {questions.length}
-              </p>
+              <p>Best score: {bestScore} / {questions.length}</p>
             )}
+            <button onClick={doneButton}>Ok</button>
           </div>
-        </div>
+        )
       )}
     </div>
   );

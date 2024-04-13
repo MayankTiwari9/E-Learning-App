@@ -1,34 +1,11 @@
 import React, { useState } from "react";
+import DocumentaionNav from "./DocumentaionNav";
 
 const Documentation = () => {
-  const documentationTopics = [
-    { topic: "Java" },
-    { topic: "JavaScript" },
-    { topic: "Python" },
-    { topic: "C" },
-    { topic: "Cpp" },
-  ];
 
   return (
     <div>
-      <nav
-        className="navbar navbar-expand-lg bg-body-tertiary w-100"
-        data-bs-theme="dark"
-      >
-        <div className="container-fluid w-100">
-          <div id="navbarText" style={{ width: "100%" }}>
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
-              {documentationTopics.map((item) => (
-                <li className="nav-item" key={item.topic}>
-                  <a className={`nav-link active`} href={`#`}>
-                    {item.topic}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <DocumentaionNav/>
       <div className="w-75 mx-auto mt-5 text-white p-4 rounded" style={{backgroundColor: "rgb(2,25,39)"}}>
         <p>
           Documentation for computer languages is an indispensable aspect of
