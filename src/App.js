@@ -1,4 +1,6 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./Components/Header/NavBar";
@@ -10,6 +12,7 @@ import MockTest from "./Components/Tests/MockTest";
 import Documentation from "./Components/Documentation/Documentation";
 import OnlineCourse from "./Components/OnlineCourse/OnlineCourse";
 import DocumentationCard from "./Components/Documentation/DocumentationCard";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   localStorage.setItem("JavaScore", 0);
@@ -28,6 +31,7 @@ function App() {
           <Route path="/test" element={<Test/>}/>
           <Route path="/test/:language" element={<MockTest/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
