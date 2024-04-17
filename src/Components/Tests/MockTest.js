@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import data from "../../test.json";
+import data from "../../JSONData/test.json";
 import { useParams, useNavigate  } from "react-router-dom";
 import "./MockTest.css";
 import Tick from "./tick.png";

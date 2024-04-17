@@ -13,25 +13,26 @@ import Documentation from "./Components/Documentation/Documentation";
 import OnlineCourse from "./Components/OnlineCourse/OnlineCourse";
 import DocumentationCard from "./Components/Documentation/DocumentationCard";
 import Footer from "./Components/Footer/Footer";
+import OnlineCourseCard from "./Components/OnlineCourse/OnlineCourseCard";
 
 function App() {
-  localStorage.setItem("JavaScore", 0);
 
   return (
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/auth" element={<SignInForm />} />
-          <Route path="/sign-up" element={<SignUpForm />} />
-          <Route path="/documentation" element={<Documentation/>}/>
-          <Route path="/documentation/:language" element={<DocumentationCard/>}/>
-          <Route path="online-course" element={<OnlineCourse/>}/>
-          <Route path="/test" element={<Test/>}/>
-          <Route path="/test/:language" element={<MockTest/>}/>
-        </Routes>
-        <Footer/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/auth" element={<SignInForm />} />
+            <Route path="/sign-up" element={<SignUpForm />} />
+            <Route path="/documentation" element={<Documentation />} />
+            <Route path="/documentation/:language" element={<DocumentationCard />} />
+            <Route path="/online-course" element={<OnlineCourse />} />
+            <Route path="/online-course/:language" element={<OnlineCourseCard/>}/>
+            <Route path="/test" element={<Test />} />
+            <Route path="/test/:language" element={<MockTest />} />
+          </Routes>
+          <Footer />
       </BrowserRouter>
     </div>
   );

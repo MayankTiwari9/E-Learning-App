@@ -1,0 +1,112 @@
+{
+  "javascript": [
+    {
+      "topic": "Introduction to JavaScript + Setup",
+      "video": "https://youtube.com/embed/ER9SspLe4Hg?si=pR8Sb2e77QKBCWx6"
+    },
+    {
+      "topic": "Variables in JavaScript",
+      "video": "https://youtube.com/embed/Q4p8vRQX8uY?si=C_PQ7XZtpG34YNT1"
+    },
+    {
+      "topic": "const, let and var in JavaScript",
+      "video": "https://youtube.com/embed/Icev9Oxf0WA?si=ckiGSfu7xwtVDIbn"
+    },
+    {
+      "topic": "Primitives and Objects in JavaScirpt",
+      "video": "https://youtube.com/embed/qpU3WIqRz9I?si=DgGEzpLLXaRF63dz"
+    },
+    {
+      "topic": "JavaScript Operators and Expressions",
+      "video": "https://youtube.com/embed/lsV8JQgSW1s?si=CNetqqT7gnZ1Z9B4"
+    }
+  ],
+  "java": [
+    {
+      "topic": "Introduction to Java + Setup",
+      "video": "https://youtube.com/embed/ntLJmHOJ0ME?si=JRuN18OYEa5BvS44"
+    },
+    {
+      "topic": "Basic Structure of a Java Program",
+      "video": "https://youtube.com/embed/zIdg7hkqNE0?si=rHx-L4vI1x5K1JML"
+    },
+    {
+      "topic": "Variables and Data Types in Java",
+      "video": "https://youtube.com/embed/X0zdAG7gfgs?si=Ns0zqTIky3KUruAC"
+    },
+    {
+      "topic": "Literals in Java",
+      "video": "https://youtube.com/embed/b2VJmyarV3I?si=iJav2NKTMkFYW6k6"
+    },
+    {
+      "topic": "Getting user Input in Java",
+      "video": "https://youtube.com/embed/HRfmLqqvzUs?si=yMcnC5h-znQ6Eitl"
+    }
+  ],
+  "python": [
+    {
+      "topic": "Introduction to Programming & Python",
+      "video": "https://youtube.com/embed/7wnove7K-ZQ?si=ENe-wzTFFLSQedfn"
+    },
+    {
+      "topic": "Some Amazing Python Programs",
+      "video": "https://youtube.com/embed/Tto8TS-fJQU?si=n1Nq7144O4Vxa3q0"
+    },
+    {
+      "topic": "Modules and Pip",
+      "video": "https://youtube.com/embed/xwKO_y2gHxQ?si=RfU8Gkm5gVsFf0lF"
+    },
+    {
+      "topic": "Our First Python Program",
+      "video": "https://youtube.com/embed/7IWOYhfAcVg?si=cb3vcXzd-24c3Weo"
+    },
+    {
+      "topic": "Comments, Escape Sequence & Print Statements",
+      "video": "https://youtube.com/embed/qxPMmW93eDs?si=BNH352x3S4KWm_Fu"
+    }
+  ],
+  "c": [
+    {
+      "topic": "Why Learn C Programming Language?",
+      "video": "https://youtube.com/embed/7Dh73z3icd8?si=MBZdIhvJ5Bmk2eh7"
+    },
+    {
+      "topic": "What is Coding & C Programming Language?",
+      "video": "https://youtube.com/embed/Wa-kgmSLls4?si=8lteyIYK-4KegXMM"
+    },
+    {
+      "topic": "Install & Configure VS Code with C Compiler",
+      "video": "https://youtube.com/embed/9xCskNFVt2c?si=FXNfc8G18rVhqZgO"
+    },
+    {
+      "topic": "Basic Structure of C Program",
+      "video": "https://youtube.com/embed/5SIBB589fAg?si=33rfZcCtvGUZVNqI"
+    },
+    {
+      "topic": "Basic syntax Of A C Program",
+      "video": "https://youtube.com/embed/5SIBB589fAg?si=mSz8HpTIa-twG90T"
+    }
+  ],
+  "cpp": [
+    {
+      "topic": "Introduction to C++, installing VS Code",
+      "video": "https://youtube.com/embed/j8nAHeVKL08?si=8V1V_Wcg15RVENSD"
+    },
+    {
+      "topic": "Basic Structure of a C++ Program",
+      "video": "https://youtube.com/embed/oW2r0r_i5Ps?si=b4Xx3mBUy7BJXR2G"
+    },
+    {
+      "topic": "Variables and Comments in C++",
+      "video": "https://youtube.com/embed/jigb6W35zHc?si=z-OVhgTtKxKARMql"
+    },
+    {
+      "topic": "Variable Scope and Data Types in C++",
+      "video": "https://youtube.com/embed/JrnQ-915czY?si=grUOhobJijnHULfA"
+    },
+    {
+      "topic": "C++ Basic input/Output & More",
+      "video": "https://youtube.com/embed/J05uoTbGOvQ?si=_898nt5j4BlnK13b"
+    }
+  ]
+}

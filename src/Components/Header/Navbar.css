@@ -1,5 +1,5 @@
 .logo-div {
-  background-color: rgb(237, 247, 239);
+  background-color: transparent;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -12,6 +12,7 @@
 .sticky {
   position: sticky;
   top: 0;
+  background-color: #ffffff;
 }
 
 .logo-div h3 {

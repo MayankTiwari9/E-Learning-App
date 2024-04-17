@@ -40,7 +40,6 @@ const Navbar = () => {
             <Link to="/online-course">Online Courses</Link>
             <Link to="/documentation">Documentations</Link>
             <Link to="/test">Mock Tests</Link>
-            <Link to="/">Contact Us</Link>
             {isLoggedIn ? (<Link className="preNavLink" to="/">
               <div className="signup-div" onClick={() => tokenContext.login('')}>
                 Log Out

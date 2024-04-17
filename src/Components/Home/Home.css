@@ -1,0 +1,82 @@
+.home-container {
+  background-image: conic-gradient(
+    from 36deg at 20% 80%,
+    #a100ff 0% 25%,
+    #000000 25% 30%,
+    #119cfdff 30% 50%
+  );
+
+  margin-top: -90px;
+  height: 50vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-main{
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  column-gap: 25px;
+}
+
+.company-name-span{
+  color: #000000;
+}
+
+.home-info{
+  background-color: rgb(8,14,64);
+  display: flex;
+  height: 10vmax;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-info > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-info > div > p{
+  color: rgb(154,159,181);
+}
+.home-info > div > h4{
+  color: #ffffff;
+}
+
+.home-doc-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.home-doc-para{
+  width: 50%;
+  margin: auto;
+}
+ .home-docs-card{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+   margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 50px;
+}  
+ .home-docs-card > a > div > img{
+  width: 287px;
+  height: 200px;
+} 
+ .home-docs-card > a{
+  text-decoration: none; 
+} 
+
+
