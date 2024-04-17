@@ -38,9 +38,10 @@ const OnlineCourseCard = () => {
               <div className="accordion-body">
                 {item.description}
                 <div className="card-body">
-                  <div class="embed-responsive embed-responsive-4by3">
+                  <div className="embed-responsive embed-responsive-4by3">
                     <iframe
-                      class="embed-responsive-item w-100"
+                    title={item.description}
+                      className="embed-responsive-item w-100"
                       style={{height: "500px"}}
                       src={item.video}
                       allowfullscreen
@@ -49,7 +50,7 @@ const OnlineCourseCard = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div>  
         ))}
       </div>
     </div>

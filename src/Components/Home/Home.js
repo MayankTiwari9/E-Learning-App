@@ -60,10 +60,10 @@ const Home = () => {
         <div className="home-docs-card">
           {languages.map((item, index) => (
             <Link key={index} to={`/documentation/${item.topic}`}>
-              <div class="card m-2" style={{width: "18rem"}}>
-                <img src={item.image} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">{item.topic}</h5>
+              <div className="card m-2" style={{width: "18rem"}}>
+                <img src={item.image} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">{item.topic}</h5>
                 </div>
               </div>
             </Link>
