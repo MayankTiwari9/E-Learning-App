@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <>
         <div className={`logo-div ${isSticky ? 'sticky' : ''}`}>
-          <h3>Smart Education</h3>
+          <h3><Link to='/'>Smart Education</Link></h3>
           <div
             className={`menu-btn ${isMenuOpen ? 'open' : ''}`}
             onClick={toggleMenu}

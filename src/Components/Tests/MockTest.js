@@ -79,7 +79,7 @@ const MockTest = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="container">
+    <div className="container mt-5">
       {result === null ? (
         <div className="card">
           <div className="card-body">
@@ -102,8 +102,8 @@ const MockTest = () => {
                         onChange={() => handleAnswer(index)}
                         checked={selectedOption === index}
                         className="form-check-input"
-                      />
-                      {option}
+                        />
+                        {option}
                     </label>
                   </li>
                 ))}
